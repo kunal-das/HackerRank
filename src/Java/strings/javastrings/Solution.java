@@ -19,11 +19,11 @@ public class Solution {
 		
 		for(int index = 0; index <= (chrArr.length - k); index++)
 		{
-			if(chrArr[index] > max_char)
+			if(chrArr[index] >= max_char)
 			{	max_char_index = index;
 				max_char = chrArr[index];
 			}
-			else if(chrArr[index] < min_char)
+			else if(chrArr[index] <= min_char)
 			{
 				min_char_index = index;
 				min_char = chrArr[index];
